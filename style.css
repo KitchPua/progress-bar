@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Gothic', sans-serif;
+}
+nav img{
+    width: 150px;
+}
+.header{
+    width: 100%;
+    background-color: white;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(187, 255, 174);
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(255, 104, 104);
+    text-decoration: 13px;
+    font-size: 30px;
+}
+
+.progress-bar{
+    box-shadow: 10px 9px 78px -15px rgba(0,0,0,0.75);
+    width: 90%;
+    padding: 10px 20px;
+}
+
+.progress-bar h1 {
+    color: rgb(255, 104, 104);
+    text-decoration: 13px;
+    font-size: 30px;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.content-item{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.name{
+    height: 50px;
+    border: 1px solid white;
+    width: 100%;
+}
+
+.loader{
+    height: 50px;
+    border: 1px solid green;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.loader .progress{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(187, 255, 174);
+    animation: progress-animation 3s forwards;
+    border-radius: 10px;
+}
+
+.amount{
+    height: 50px;
+    border: 1px solid white;
+    width: 100%;
+}
+
+@keyframes progress-animation {
+    0% { width: 0%;}
+    100% { width: 29.8%;}
+}
